@@ -48,6 +48,7 @@ def main(session: Session) -> str:
         create_orders_stream(session)
 
     # Process data incrementally
+    x=1
     merge_order_updates(session)
 #    session.table('HARMONIZED.ORDERS').limit(5).show()
 
